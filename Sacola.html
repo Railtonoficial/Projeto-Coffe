@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Sacola.css">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="css/resposivoSacola.css">
+    <link rel="shortcut icon" href="./img/Home/Coffe.webp" type="image/x-icon">
+    <title>Cub☕spresso</title>
+</head>
+
+<body>
+<header>
+    <img src="img/Home/logo.png" alt="logoEmpresa" class="logo"/>
+    <div class="cart-container">
+        <a href="Sacola.html" class="cart-icon">
+            <img src="img/Home/ShoppingBag.png" alt="Sacola Produtos">
+        </a>
+    </div>
+</header>
+
+<section class="subMenu">
+    <div class="content-left">
+        <a href="Home.html" class="back-link">Voltar para o início</a>
+        <img class="product-img" src="img/Classicos/Espresso.jpg" alt="Café Espresso">
+    </div>
+    <div class="content-right">
+        <h2>Café Espresso</h2>
+        <p class="price">R$ 0,00</p>
+        <img class="cart-vegano" src="img/Categoria/Vegano.jpg" alt="Vegano">
+        <p class="description">Imagine um café espresso como um abraço acolhedor em uma xicara. Com cor profunda e rica,
+            ele é o convite
+            perfeito para um momento de pausa. O aroma intenso que sobe suavemente é como um caloroso cumprimento,
+            prometendo um instante de prazer e concentração. Ao dar o primeiro gole, a textura aveludada e o sabor
+            robusto
+            envolve o paladar oferecendo um equilíbrio encantador entre a doçura e a leve amargura. É um prazer pequeno,
+            mas
+            incrivelmente satisfatório, ideal para um rápido reequilíbrio durante o dia. Cada xícara é uma pausa
+            deliciosa,
+            um momento só seu, para recarregar e seguir em frente com renovada energia e tranquilidade.</p>
+
+
+        <div class="observation-container">
+            <label for="observation">Observações sobre o Pedido:</label>
+            <textarea id="observation" rows="3" placeholder="Digite suas observações. Ex.: Enviar Açúcar"></textarea>
+        </div>
+
+
+        <div class="quantity-container">
+            <div class="quantity-input">
+                <button class="quantity-btn" id="decrease">-</button>
+                <input type="number" id="quantity" value="1" min="1" />
+                <button class="quantity-btn" id="increase">+</button>
+            </div>
+            <button class="buy-button">Comprar</button>
+        </div>
+
+    </div>
+</section>
+<script src="js/eventosHome.js"></script>
+</body>
+</html>
